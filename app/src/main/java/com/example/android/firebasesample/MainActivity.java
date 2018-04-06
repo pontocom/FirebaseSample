@@ -111,6 +111,7 @@ public class MainActivity extends AppCompatActivity {
                             i.putExtra("email", user.getEmail());
                             startActivity(i);
                         } else {
+
                             Log.w(TAG, "signInWithEmail:failure", task.getException());
                             Toast.makeText(MainActivity.this, "Authentication failed.", Toast.LENGTH_SHORT).show();
                         }

@@ -35,6 +35,10 @@ public class DataActivity extends AppCompatActivity {
 
         User user = new User(nome, email, telefone);
         databaseReference.child("users").child(nome).setValue(user);
+
+        etNome.setText("");
+        etEmail.setText("");
+        etTelefone.setText("");
     }
 
 }
